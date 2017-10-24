@@ -7,7 +7,7 @@ var html = '';
         dataType:"json",
         success:function(data){
             $.each(data,function(key,value){
-                html += '<li>'+value.name+'</li>';
+                html += '<li class="list-group-item">'+value.name+'</li>';
             })
             $('#repoList').html(html);
 
